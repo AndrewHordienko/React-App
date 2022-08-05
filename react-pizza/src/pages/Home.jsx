@@ -40,7 +40,7 @@ function Home() {
          </div>
          <h2 className="content__title">Все пиццы</h2>
          <div className="content__items">
-            {items ? items.map((obj) => <PizzaBlock key={obj.id} isLoading={true} {...obj} />) : Array(10).fill(<PizzaLoadingBlock />)}
+            {isLoaded ? items.map((obj) => <PizzaBlock key={obj.id} isLoading={true} {...obj} />) : Array(10).fill(<PizzaLoadingBlock />)}
          </div>
       </div>
 
